@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="inavi_navigation_sdk_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YIg-mI-apJ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="osd-eb-bgv">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oAh-p1-BMP" customClass="InvSimpleSearchBar" customModule="iNaviNavigationSdk">
+                                <rect key="frame" x="55" y="118" width="338" height="64"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="h0c-W0-xcw"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cg-O7-pt7">
+                                <rect key="frame" x="15" y="130" width="40" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="7eS-Yy-plK"/>
+                                    <constraint firstAttribute="width" constant="40" id="WMh-V3-IZG"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="orbismap_demo_icon_back"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onBack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3xB-Zy-IAj"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="JJ1-F1-dG8">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="4Rc-hA-sWe" detailTextLabel="B6y-eq-GSm" style="IBUITableViewCellStyleSubtitle" id="yGt-4P-qeF">
+                                        <rect key="frame" x="0.0" y="50.333333969116211" width="393" height="52"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yGt-4P-qeF" id="c4w-4l-TYV">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="52"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4Rc-hA-sWe">
+                                                    <rect key="frame" x="19.999999999999996" y="7.3333333333333339" width="32.666666666666664" height="19.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="B6y-eq-GSm">
+                                                    <rect key="frame" x="19.999999999999996" y="27.333333333333329" width="49.666666666666664" height="17"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="WbM-wL-lFe"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="6Ty-Mi-ez0"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="e12-Z7-Tir"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="osd-eb-bgv" secondAttribute="bottom" id="09e-DI-iYD"/>
+                            <constraint firstItem="JJ1-F1-dG8" firstAttribute="top" secondItem="YIg-mI-apJ" secondAttribute="top" id="1M3-eC-W8O"/>
+                            <constraint firstAttribute="bottom" secondItem="JJ1-F1-dG8" secondAttribute="bottom" id="JzT-wK-Uqh"/>
+                            <constraint firstItem="e12-Z7-Tir" firstAttribute="trailing" secondItem="JJ1-F1-dG8" secondAttribute="trailing" id="K9L-sX-xAf"/>
+                            <constraint firstItem="osd-eb-bgv" firstAttribute="leading" secondItem="e12-Z7-Tir" secondAttribute="leading" id="P9Y-no-z07"/>
+                            <constraint firstItem="oAh-p1-BMP" firstAttribute="leading" secondItem="2cg-O7-pt7" secondAttribute="trailing" id="UrN-NP-PJR"/>
+                            <constraint firstItem="oAh-p1-BMP" firstAttribute="top" secondItem="e12-Z7-Tir" secondAttribute="top" id="WUg-aX-PRq"/>
+                            <constraint firstItem="oAh-p1-BMP" firstAttribute="trailing" secondItem="e12-Z7-Tir" secondAttribute="trailing" id="Y72-0p-16M"/>
+                            <constraint firstItem="osd-eb-bgv" firstAttribute="top" secondItem="YIg-mI-apJ" secondAttribute="top" id="hS8-dy-ZyO"/>
+                            <constraint firstItem="2cg-O7-pt7" firstAttribute="leading" secondItem="e12-Z7-Tir" secondAttribute="leading" constant="15" id="iOa-5a-uLF"/>
+                            <constraint firstItem="2cg-O7-pt7" firstAttribute="centerY" secondItem="oAh-p1-BMP" secondAttribute="centerY" id="kDu-cB-VRr"/>
+                            <constraint firstItem="JJ1-F1-dG8" firstAttribute="leading" secondItem="e12-Z7-Tir" secondAttribute="leading" id="kXr-D9-O2c"/>
+                            <constraint firstItem="e12-Z7-Tir" firstAttribute="trailing" secondItem="osd-eb-bgv" secondAttribute="trailing" id="zwh-2c-9sz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backBt" destination="2cg-O7-pt7" id="4oX-3s-Kxq"/>
+                        <outlet property="mapContainer" destination="osd-eb-bgv" id="VAB-lc-v9H"/>
+                        <outlet property="searchBar" destination="oAh-p1-BMP" id="ZSl-Nm-P6I"/>
+                        <outlet property="tableView" destination="JJ1-F1-dG8" id="iso-E3-57e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="14.503816793893129" y="117.60563380281691"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="orbismap_demo_icon_back" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,15 @@
+{
+  "originHash" : "f97e97bc2752d6bb4c149f56f3d7537843718285efca21291b43d2dff13221db",
+  "pins" : [
+    {
+      "identity" : "global-inavi-navigation-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/inavi-systems/Global-iNavi-Navigation-SDK",
+      "state" : {
+        "revision" : "3a8291d5cbdacacd460c0721c55d0a3f1b731c27",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 3
+}

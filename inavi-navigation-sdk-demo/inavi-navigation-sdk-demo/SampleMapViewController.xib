@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SampleMapViewController" customModule="inavi_navigation_sdk_demo" customModuleProvider="target">
+            <connections>
+                <outlet property="action" destination="jiO-3y-s77" id="M7j-iN-fZi"/>
+                <outlet property="mapView" destination="wc6-OG-kyp" id="BfE-rY-Gg1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wc6-OG-kyp" customClass="InvMapView" customModule="iNaviNavigationSdk">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDG-tg-FWl">
+                    <rect key="frame" x="10" y="118" width="40" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="J7O-b6-lEt"/>
+                        <constraint firstAttribute="height" constant="40" id="dgA-S8-ea5"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="orbismap_demo_icon_back"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="onBack:" destination="-1" eventType="touchUpInside" id="jXU-w3-VN0"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jiO-3y-s77">
+                    <rect key="frame" x="10" y="744" width="75" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="FNT-Y4-CNC"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" id="aNa-hY-shr"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button" cornerStyle="large">
+                        <backgroundConfiguration key="background">
+                            <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        </backgroundConfiguration>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="onActionButton:" destination="-1" eventType="touchUpInside" id="mwU-WV-mEb"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wc6-OG-kyp" secondAttribute="trailing" id="61W-kf-eb1"/>
+                <constraint firstItem="wc6-OG-kyp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="7jl-rA-Dp1"/>
+                <constraint firstItem="wc6-OG-kyp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="FCR-5X-4Rx"/>
+                <constraint firstItem="gDG-tg-FWl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="X3u-7D-7zz"/>
+                <constraint firstAttribute="bottom" secondItem="wc6-OG-kyp" secondAttribute="bottom" id="Ymk-bc-nSx"/>
+                <constraint firstItem="jiO-3y-s77" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="Zje-NR-CIe"/>
+                <constraint firstItem="gDG-tg-FWl" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Zu5-sI-ktm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="jiO-3y-s77" secondAttribute="bottom" id="tfT-un-Ra4"/>
+            </constraints>
+            <point key="canvasLocation" x="138" y="154"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="orbismap_demo_icon_back" width="24" height="24"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
