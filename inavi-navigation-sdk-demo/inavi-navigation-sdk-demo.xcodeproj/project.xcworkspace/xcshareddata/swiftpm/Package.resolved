@@ -4,10 +4,10 @@
     {
       "identity" : "global-inavi-navigation-sdk",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/inavi-systems/Global-iNavi-Navigation-SDK",
+      "location" : "https://github.com/inavi-systems/Global-iNavi-Navigation-SDK/",
       "state" : {
-        "revision" : "3a8291d5cbdacacd460c0721c55d0a3f1b731c27",
-        "version" : "1.0.0"
+        "revision" : "0fcee606729fdbb4d94b584630d3a6fc9a77f17d",
+        "version" : "1.0.1"
       }
     }
   ],

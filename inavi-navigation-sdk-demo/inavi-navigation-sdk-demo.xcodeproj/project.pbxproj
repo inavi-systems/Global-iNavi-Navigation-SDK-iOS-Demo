@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A4E5A5D2F2B116700F91581 /* iNaviNavigationSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 8A4E5A5C2F2B116700F91581 /* iNaviNavigationSDK */; };
 		8A8715E92F1751D5002F9B7D /* iNaviNavigationSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 8A8715E82F1751D5002F9B7D /* iNaviNavigationSDK */; };
 		8A8715F32F177818002F9B7D /* iNaviNavigationSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 8A8715F22F177818002F9B7D /* iNaviNavigationSDK */; };
-		8A8715F72F178431002F9B7D /* iNaviNavigationSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 8A8715F62F178431002F9B7D /* iNaviNavigationSDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,7 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A8715F72F178431002F9B7D /* iNaviNavigationSDK in Frameworks */,
+				8A4E5A5D2F2B116700F91581 /* iNaviNavigationSDK in Frameworks */,
 				8A8715E92F1751D5002F9B7D /* iNaviNavigationSDK in Frameworks */,
 				8A8715F32F177818002F9B7D /* iNaviNavigationSDK in Frameworks */,
 			);
@@ -89,7 +89,7 @@
 			packageProductDependencies = (
 				8A8715E82F1751D5002F9B7D /* iNaviNavigationSDK */,
 				8A8715F22F177818002F9B7D /* iNaviNavigationSDK */,
-				8A8715F62F178431002F9B7D /* iNaviNavigationSDK */,
+				8A4E5A5C2F2B116700F91581 /* iNaviNavigationSDK */,
 			);
 			productName = "inavi-navigation-sdk-demo";
 			productReference = 8AE9D73A2F14B7BD009D2A10 /* inavi-navigation-sdk-demo.app */;
@@ -120,7 +120,7 @@
 			mainGroup = 8AE9D7312F14B7BD009D2A10;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				8A8715F52F178431002F9B7D /* XCRemoteSwiftPackageReference "Global-iNavi-Navigation-SDK" */,
+				8A4E5A5B2F2B116700F91581 /* XCRemoteSwiftPackageReference "Global-iNavi-Navigation-SDK" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8AE9D73B2F14B7BD009D2A10 /* Products */;
@@ -366,28 +366,28 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		8A8715F52F178431002F9B7D /* XCRemoteSwiftPackageReference "Global-iNavi-Navigation-SDK" */ = {
+		8A4E5A5B2F2B116700F91581 /* XCRemoteSwiftPackageReference "Global-iNavi-Navigation-SDK" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/inavi-systems/Global-iNavi-Navigation-SDK/";
+			repositoryURL = "https://github.com/inavi-systems/Global-iNavi-Navigation-SDK";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				minimumVersion = 1.0.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		8A4E5A5C2F2B116700F91581 /* iNaviNavigationSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8A4E5A5B2F2B116700F91581 /* XCRemoteSwiftPackageReference "Global-iNavi-Navigation-SDK" */;
+			productName = iNaviNavigationSDK;
+		};
 		8A8715E82F1751D5002F9B7D /* iNaviNavigationSDK */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = iNaviNavigationSDK;
 		};
 		8A8715F22F177818002F9B7D /* iNaviNavigationSDK */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = iNaviNavigationSDK;
-		};
-		8A8715F62F178431002F9B7D /* iNaviNavigationSDK */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 8A8715F52F178431002F9B7D /* XCRemoteSwiftPackageReference "Global-iNavi-Navigation-SDK" */;
 			productName = iNaviNavigationSDK;
 		};
 /* End XCSwiftPackageProductDependency section */
