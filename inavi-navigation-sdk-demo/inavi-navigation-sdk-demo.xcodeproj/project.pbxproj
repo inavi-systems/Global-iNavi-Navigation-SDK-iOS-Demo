@@ -371,7 +371,7 @@
 			repositoryURL = "https://github.com/inavi-systems/Global-iNavi-Navigation-SDK";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.3;
+				minimumVersion = 1.0.4;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

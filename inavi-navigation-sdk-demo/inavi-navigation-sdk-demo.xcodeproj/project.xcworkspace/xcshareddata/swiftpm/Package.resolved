@@ -6,8 +6,17 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/inavi-systems/Global-iNavi-Navigation-SDK/",
       "state" : {
-        "revision" : "0a5dfaf9f4d4246421c4a99ceb4495d9f3d89edc",
-        "version" : "1.0.3"
+        "revision" : "86a3e5f8429b068c918a800956eee2e7c0fcb442",
+        "version" : "1.0.4"
+      }
+    },
+    {
+      "identity" : "maplibre-gl-native-distribution",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/maplibre/maplibre-gl-native-distribution",
+      "state" : {
+        "revision" : "fa12216f30833c2b4d897714f7c1ca2f5608f685",
+        "version" : "6.22.1"
       }
     }
   ],
