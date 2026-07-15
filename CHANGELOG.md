@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.0.4  - 2026-07-15
+- Add setLanguage API for map label language settings
+- Safety improvements
+
 ## 1.0.3  - 2026-05-22
 - Flutter Plugin Support
 - Safety improvements
